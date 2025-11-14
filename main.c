@@ -4,9 +4,12 @@
 int main() {
     while (1) {
         printf("Bem vindo ao FEIFood\n");
+
         printf("1- Cadastrar-se\n");
-        printf("2- Fazer Login\n");
-        printf("3- Sair\n");
+        printf("2- Login Usuario\n");
+        printf("3- Login Administrador\n");
+        printf("4- Sair\n");
+
         int op = 0;
         printf("Escolha a opcao desejada: ");
         scanf("%d", &op);
@@ -24,6 +27,8 @@ int main() {
                 menuInicial(usuario);
                 break;
             case 3:
+                loginAdm(usuario);
+            case 4:
                 printf("Saindo do programa\n");
                 break;
             default:
